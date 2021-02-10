@@ -1,0 +1,82 @@
+\subsection*{Завдання 2:}
+$\left\{\begin{aligned}
+    \dot{y} &= x + \mu y \\
+    \dot{x} &= \mu x - y
+\end{aligned}\right.$
+
+\textbf{Перейти у сферичні координати}
+
+$\left\{\begin{aligned}
+    x = r\cos \varphi\\
+    y = r\sin \varphi
+\end{aligned}\right.$
+
+$\left\{\begin{aligned}
+    \dot{y} &= \dot{r}\sin \varphi + \dot{\varphi}r \cos \varphi \\
+    \dot{x} &= \dot{r}\cos \varphi - \dot{\varphi} r \sin \varphi
+\end{aligned}\right.$
+
+
+
+$\left\{\begin{aligned}
+    \dot{r}\sin \varphi + \dot{\varphi}r \cos \varphi &=  r\cos \varphi + \mu r \sin \varphi\\
+    \dot{r}\cos \varphi - \dot{\varphi} r \sin \varphi &= \mu r \cos \varphi - r \sin \varphi
+\end{aligned}\right.$
+
+$\left\{\begin{aligned}
+    \dot{r} &= \frac{r\cos \varphi + \mu r \sin \varphi -\dot{\varphi}r \cos \varphi}{ \sin\varphi} = 
+    r\ctg\varphi + \mu r - \dot{\varphi}r\ctg \varphi\\
+    \dot{\varphi} &= \frac{\dot{r}\cos \varphi + r \sin \varphi - \mu r \cos \varphi}{r \sin \varphi} = 
+    \frac{\dot{r}\ctg \varphi}{r} + 1 - \mu \ctg \varphi
+\end{aligned}\right.$
+
+$\dot{\varphi} = \ctg^2\varphi + \mu \ctg\varphi - \dot{\varphi}\ctg^2 \varphi +1 - \mu \ctg \varphi$
+
+$\dot{\varphi} (1 + \ctg^2 \varphi)= 1 + \ctg^2 \varphi \ \ \Longrightarrow \ \ \dot{\varphi} = 1$
+
+$\dot{r} = r\ctg\varphi + \mu r - \dot{\varphi}r\ctg \varphi = \Bigg| \dot{\varphi} = 1 \Bigg| = \mu r$
+
+$\left\{\begin{aligned}
+    \dot{r} &= \mu r\\
+    \dot{\varphi} &= 1
+\end{aligned}\right.$
+
+\textbf{Знайти фазову траєкторію в сферичних координатих }
+
+$\left\{\begin{aligned}
+    \frac{dr}{dt} &= \mu r\\
+    \frac{d\varphi}{dt} &= 1
+\end{aligned}\right.$
+
+$\frac{dr}{d\varphi} = \mu r$
+
+$\frac{dr}{r} = \mu d\varphi$
+
+$\ln r = \mu \varphi + C$
+
+$r = e ^{\mu\varphi + C}$
+
+\textbf{Знайти фазову траєкторію в (x, y) }
+
+$\left\{\begin{aligned}
+    \dot{y} &= x + \mu y \\
+    \dot{x} &= \mu x - y
+\end{aligned}\right.$
+
+$\frac{dy}{dx} = \frac{x+\mu y}{\mu x-y} = \frac{1 + \mu\frac{y}{x}}{\mu - \frac{y}{x}} = f(\frac{y}{x})$
+
+шукаємо рішення у вигляді:
+
+$y(x) = xz(x) \ \ z = \frac{y}{x}$
+
+$y' = xz' + z = f(\frac{y}{x})$
+
+$z' = \frac{f(z) - z}{x}, \ \ \int \frac{dz}{\frac{1 + \mu z - \mu z + z^2}{\mu - z}} =  \frac{dx}{x}$
+
+тоді 
+
+$\frac{dz\mu}{1+z^2} - \frac{zdz}{1+z^2} = lnx + C$
+
+$\mu \arctan z - \frac{1}{2}\ln (1+z^2) = \ln x + C$
+
+$\mu \arctan\frac{y}{x} - \frac{1}{2}\ln(1+(\frac{y}{x})^2) = \ln x +C $

@@ -1,0 +1,38 @@
+\subsection*{Завдання 3:}
+\textbf{Система Лоренца}
+
+$\left\{\begin{aligned}
+    \dot{x} &= -\sigma x + \sigma y \\
+    \dot{y} &= rx - y - xz\\
+    \dot{z} &= -bz + xy
+\end{aligned}\right.$
+
+\textbf{Знайти особливі точки $[M(0,0,0), N_{1,2}(\pm\sqrt{b(r-1)},\pm\sqrt{b(r-1)}, r-1 )]$} 
+
+$\left\{\begin{aligned}
+    &-\sigma x + \sigma y  = 0\\
+    &rx - y - xz = 0\\
+    &-bz + xy = 0
+\end{aligned}\right.$
+
+Нехай $x\neq 0$ тоді
+
+$\left\{\begin{aligned}
+    &x = y\\
+    &rx - y - xz = 0\\ 
+    &z = \frac{x^2}{b}
+\end{aligned}\right.$
+
+$rx - x - \frac{x^3}{b} = 0 \ | \ \cdot \frac{1}{x}$
+
+$b(r - 1) = x^2 \ \Longrightarrow \ x = y = \pm \sqrt{b(r-1)}, \ z = r- 1$
+
+\textbf{Знайти $\Gamma(t)$}
+
+$\dive \overrightarrow{V} = -\sigma  - 1 -b$
+
+$\frac{1}{\Gamma} \frac{d\Gamma}{dt} = \dive \overrightarrow{V}$ (ф-ла Ейлера)
+
+$\ln \Gamma = (-\sigma - 1 - b)t + C$
+
+$\Gamma(t) = \Gamma(0) e^{-(\sigma + 1 + b)t}$
