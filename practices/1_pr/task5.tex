@@ -1,0 +1,55 @@
+\subsection*{Завдання 5:}
+
+$\ddot{x} + 2\gamma\dot{x}+\omega_0^2x = 0 \ \Longrightarrow \ 
+\left\{\begin{aligned}
+    \frac{dy}{dt} &= -2\gamma y -\omega_0^2x\\
+    \frac{dx}{dt} &= y 
+\end{aligned}\right.$
+
+\begin{figure}[h]
+    \begin{minipage}[h]{0.49\linewidth}
+        \input{practices/1_pr/source/pr1_4.tex} \\
+        \centering {a)}
+    \end{minipage}
+    \begin{minipage}[h]{0.49\linewidth}
+        \input{practices/1_pr/source/pr1_5.tex} \\
+        \centering{b)}
+    \end{minipage}
+\end{figure}
+
+\textbf{Знайти $\Gamma$}
+
+$\dive \overrightarrow{V} = -2\gamma$
+
+$\ln \Gamma = -2\gamma t + C$
+
+$\Gamma(t) = \Gamma(0)e^{-2\gamma t}$
+
+\textbf{Записати в полярних координатах}
+
+$\left\{\begin{aligned}
+    \frac{dy}{dt} &= -2\gamma y -\omega_0^2x\\
+    \frac{dx}{dt} &= y 
+\end{aligned}\right.$
+
+$\left\{\begin{aligned}
+    x = r\cos \varphi \\
+    y = r\sin \varphi 
+\end{aligned}\right.$
+
+$\left\{\begin{aligned}
+    \dot{r}\sin \varphi + \dot{\varphi}r \cos \varphi &=  -2\gamma r\sin \varphi - \omega_0^2 r\cos \varphi\\
+    \dot{r}\cos \varphi - \dot{\varphi} r \sin \varphi &= r \sin \varphi
+\end{aligned}\right.$
+
+$\left\{\begin{aligned}
+    -\dot{r} &= \dot{\varphi}r\ctg \varphi + 2\gamma r + \omega_0^2 r \ctg \varphi \\
+    \dot{\varphi} &= \frac{\dot{r}\ctg \varphi }{r} - 1
+\end{aligned}\right.$
+
+$-\dot{\varphi} = \dot{\varphi} \ctg^2 \varphi + 2\gamma\ctg \varphi + \omega_0^2 \ctg^2 \varphi + 1$
+
+$-\dot{\varphi}(1 + \ctg^2\varphi) =  2\gamma\ctg \varphi + \omega_0^2 \ctg^2\varphi + 1\ | \ 1+\ctg^2\varphi = \frac{1}{\sin^2\varphi}$ 
+
+$\dot{\varphi} = -2\gamma\cos\varphi\sin\varphi - \omega^2_0\cos^2\varphi - \sin^2\varphi= 
+-\gamma\sin 2\varphi - \omega_0^2\cos^2\varphi - \sin^2\varphi \ldots$
