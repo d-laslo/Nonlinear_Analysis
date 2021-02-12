@@ -1,0 +1,35 @@
+\subsection{Завдання 3:}
+
+$\frac{dx}{dt} = x - x^2$
+
+\textbf{Знайти оператор еволюції}
+
+$\int \frac{dx}{x - x^2} = \int dt$
+
+$\int \frac{dx}{x(1-x)} = \int dt = \Bigg{|}\frac{A}{x} + \frac{B}{1-x} = \frac{A - Ax + Bx}{x(1-x)} = \frac{1}{x(1-x)}
+\Longrightarrow A +x(B-A) = 1\Longrightarrow \left\{\begin{aligned}
+    &A = 1\\
+    &B-A = 0
+\end{aligned}\right. \Longrightarrow \\\Longrightarrow \left\{\begin{aligned}
+    &A = 1\\
+    &B = 1
+\end{aligned}\right. \Bigg{|} = \int \frac{dx}{x} + \int \frac{dx}{1-x} = \int dt$
+
+$\int \frac{dx}{x} - \int \frac{d(1-x)}{1-x} = \int dt$
+
+$\ln|x| - \ln |1-x| = t +C$
+
+$\ln |\frac{x}{1-x}| = t + C \ \Longrightarrow\ C = \ln \frac{x_0}{1-x_0}$
+
+$\frac{x}{1-x} = e^{t+C}$
+
+$x = \frac{e^{t+C}}{1+e^{t +C}} \ | \ C = \ln \frac{x_0}{1-x_0}$
+
+$x(0) = \frac{e^t\frac{x_0}{1-x_0}}{1+e^t\frac{x_0}{1-x_0}} \ |\ \cdot \frac{1-x_0}{1-x_0}$
+
+$x(0) = \frac{e^tx_0}{1-x_0 + e^tx_0}$
+
+$F^t = \frac{e^tx}{1+x(e^t- 1)}$
+
+\textit{У Кравцова чомусь ров'язок вийшов $-\ln |\frac{x}{1-x}| = t +C$, тому там оператор 
+$F^t = \frac{xe^{-t}}{1+x(e^{-t} - 1 )}$}
