@@ -1,0 +1,54 @@
+\subsection{Завдання 4:}
+
+$\left\{\begin{aligned}
+    \dot{x} & = x+y-x(x^2 + y^2)\\
+    \dot{y} & = -x+y-y(x^2+y^2)
+\end{aligned}\right.$
+
+\textbf{Перейти в полярні координати:}
+
+$\begin{aligned}
+    x = r\cos\varphi\\
+    y = r\sin\varphi
+\end{aligned}$
+
+$\left\{\begin{aligned}
+    \dot{r}\cos\varphi - r\dot{\varphi}\sin\varphi &= r\cos\varphi + r\sin\varphi-r^3\cos\varphi\\
+    \dot{r}\sin\varphi + r\dot{\varphi}\cos\varphi &= -r\cos\varphi + r\sin\varphi-r^3\sin\varphi
+\end{aligned}\right.$
+
+$\left\{\begin{aligned}
+    \dot{r}  &= r\dot{\varphi}\tg\varphi + r + r\tg\varphi-r^3\\
+    \dot{\varphi} &= -\dot{r} \frac{\tg\varphi}{r} -1 + \tg\varphi-r^2\tg\varphi
+\end{aligned}\right.$
+
+$\dot{\varphi} = -(r\dot{\varphi}\tg\varphi + r + r\tg\varphi-r^3) \frac{\tg\varphi}{r} -1 + \tg\varphi-r^2\tg\varphi = \\
+= - \dot{\varphi}\tg^2\varphi \textcolor{red}{- \tg\varphi} - \tg^2\varphi+\textcolor{blue}{r^2\tg\varphi} -1 + \textcolor{red}{\tg\varphi}\textcolor{blue}{-r^2\tg\varphi} \Longrightarrow 
+\dot{\varphi} + \dot{\varphi}\tg^2\varphi = - \tg^2\varphi - 1
+$
+
+$\dot{\varphi} = -1$
+
+$\dot{r}  = -r\tg\varphi + r + r\tg\varphi-r^3 = r(1-r^2)$
+
+$\left\{\begin{aligned}
+    \dot{r} & = r(1-r^2)\\
+    \dot{\varphi} & = -1
+\end{aligned}\right.$
+
+
+\textbf{Знайти точний розв'язок}
+
+$\frac{dr}{r(1-r^2)} = dt \ | \cdot \frac{r}{r}$
+
+$\frac{1}{2}\frac{dr^2}{r^2(1-r^2)} = \Bigg{|} r^2 = R \Bigg{|} = \frac{1}{2}\frac{dR}{R(1-R)} = dt$ 
+
+$\ln |\frac{R}{1-R}| = 2t + C$ (див. (\ref{pr2:tsk3}))
+
+$R(t= 0) = R_0 \Longrightarrow C = \frac{R_0}{1-R_0} \Longrightarrow \beta = \frac{1}{C} = \frac{1}{R_0} - 1 \ \Bigg |$ чому? бо я так хочу (але всеодно потрібно загуглить \textit{чому?})
+
+
+$\frac{R}{1-R} = 2t + C$
+
+$R = \frac{e^{2t + C}}{1+e^{2t + C}} = \frac{1}{1+e^{-(2t+C)}} = \frac{1}{1+e^{-(2t + \frac{R_0}{1-R_0})}} = \frac{1}{1+e^{-(2t + \frac{1}{\beta})}}$
+я звісно не експерт, але порівняно із розв'язком Кравцова у мене щось пішло не по плану ; розв'язок Кравцова:$ \frac{1}{1+e^{-t\beta}}$
