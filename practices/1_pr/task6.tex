@@ -1,6 +1,51 @@
 \subsection{Завдання 6:}
+\label{pr1:tsk6}
 
 $\left\{\begin{aligned}
     \dot{x} &= -y + x(x^2 + y^2)\\
     \dot{y} &= x +y(x^2 + y^2) 
 \end{aligned}\right.$
+
+\textbf{Перейти до сферичних координат:}
+
+$\begin{aligned}
+    x= r\cos\varphi\\
+    y = r\sin\varphi
+\end{aligned}$
+
+$\left\{\begin{aligned}
+    \dot{r}\cos\varphi - r\dot{\varphi}\sin\varphi &= -r\sin\varphi + r^3\cos\varphi\\
+    \dot{r}\sin\varphi + r\dot{\varphi}\cos\varphi &= r\cos\varphi +r^3\sin\varphi 
+\end{aligned}\right.$
+
+$\left\{\begin{aligned}
+    \dot{r} &= r\dot{\varphi}\tg\varphi -r\tg\varphi + r^3\\
+    \dot{\varphi} &= -\dot{r}\frac{\tg\varphi}{r} + 1 +r^2\tg\varphi 
+\end{aligned}\right.$
+
+$\dot{\varphi} = -(r\dot{\varphi}\tg\varphi -r\tg\varphi + r^3)\frac{\tg\varphi}{r} + 1 +r^2\tg\varphi = 
+-\dot{\varphi}\tg^2\varphi + \tg^2\varphi \textcolor{red}{- r^2\tg\varphi} + 1 + \textcolor{red}{r^2\tg\varphi} \Longrightarrow$
+
+$\dot{\varphi}(1 + \tg^2\varphi) = 1 + \tg^2\varphi$
+
+$\dot{\varphi} = 1$
+
+$\left\{\begin{aligned}
+    \dot{r} &= r^3\\
+    \dot{\varphi} &= 1
+\end{aligned}\right.$
+
+\textbf{Знайти розв'язок системи:}
+
+$\int \frac{dr}{r^3} = \int dt$
+
+$-\frac{1}{2}r^{-2} = t + C \Longrightarrow \Bigg | r(t = 0) = r_0 \Bigg | C = -\frac{1}{2r^2_0}$ 
+
+
+$-\frac{1}{2}r^{-2} = t - \frac{1}{2r^2_0} = \frac{t2r^2_0 - 1}{2r^2_0}$
+
+$r^2 = \frac{r^2_0}{1-2tr^2_0}$
+
+
+
+$r = \frac{r_0}{\sqrt{1-2tr^2_0}}$
