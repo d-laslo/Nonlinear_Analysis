@@ -1,0 +1,52 @@
+\subsection{Завдання 3: (Знайти розв'язок системи)}
+
+Розв'язком системи (\ref{pr3:eq1}) буде 
+
+$$
+    \begin{bmatrix}
+        u_1 \\ u_2
+    \end{bmatrix} = 
+    c_1 \begin{bmatrix}
+        \lambda_1 \\1
+    \end{bmatrix} e^{\lambda_1 t} + 
+    c_2 \begin{bmatrix}
+        \lambda_2 \\1
+    \end{bmatrix} e^{\lambda_2 t} = \Bigg(
+    c_1 \begin{bmatrix}
+        \lambda_1 \\1
+    \end{bmatrix} e^{t\sqrt{\gamma^2 - \omega_0^2}} + 
+    c_2 \begin{bmatrix}
+        \lambda_2 \\1
+    \end{bmatrix} e^{-t\sqrt{\gamma^2 - \omega_0^2}} \Bigg) e^{-\gamma t}
+$$
+
+позначимо $\omega^2 = \omega_0^2 - \gamma^2$, тоді отримаємо систему
+
+\begin{equation}\label{pr3:solution}
+    \begin{bmatrix}
+        u_1 \\ u_2
+    \end{bmatrix} =  \Bigg(
+    c_1 \begin{bmatrix}
+        \lambda_1 \\1
+    \end{bmatrix} e^{i\omega t} + 
+    c_2 \begin{bmatrix}
+        \lambda_2 \\1
+    \end{bmatrix} e^{-i\omega t} \Bigg) e^{-\gamma t}
+\end{equation}
+
+
+
+якби для пошуку власних векторів сористались не рівністю (\ref{pr3:eq3}), а рівністю
+(\ref{pr3:eq2}), отримали б рішення
+
+$$
+\begin{bmatrix}
+    u_1 \\ u_2
+\end{bmatrix} =  \Bigg(
+c_1^* \begin{bmatrix}
+    -\omega_0 \\ \lambda_1 + \gamma
+\end{bmatrix} e^{i\omega t} + 
+c_2^* \begin{bmatrix}
+    -\omega_0 \\\lambda_2 + \gamma
+\end{bmatrix} e^{-i\omega t} \Bigg) e^{-\gamma t}
+$$
