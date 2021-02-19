@@ -45,10 +45,11 @@ $\frac{1}{2}\frac{dr^2}{r^2(1-r^2)} = \Bigg{|} r^2 = R \Bigg{|} = \frac{1}{2}\fr
 
 $\ln |\frac{R}{1-R}| = 2t + C$ (див. (\ref{pr2:tsk3}))
 
-$R(t= 0) = R_0 \Longrightarrow C = \frac{R_0}{1-R_0} \Longrightarrow \beta = \frac{1}{C} = \frac{1}{R_0} - 1 \ \Bigg |$ чому? бо я так хочу (але всеодно потрібно загуглить \textit{чому?})
+$R(t= 0) = R_0 \Longrightarrow C = \ln|\frac{R_0}{1-R_0}| \Longrightarrow e^C =  C' = \frac{R_0}{1-R_0} \Longrightarrow \beta = \frac{1}{C'} = \frac{1}{R_0} - 1 \ \Bigg |$ чому? бо я так хочу (але всеодно потрібно загуглить \textit{чому?})
 
 
-$\frac{R}{1-R} = 2t + C$
+$\frac{R}{1-R} = e^{2t + C}$
 
-$R = \frac{e^{2t + C}}{1+e^{2t + C}} = \frac{1}{1+e^{-(2t+C)}} = \frac{1}{1+e^{-(2t + \frac{R_0}{1-R_0})}} = \frac{1}{1+e^{-(2t + \frac{1}{\beta})}}$
+$R = \frac{e^{2t + C}}{1+e^{2t + C}} = \frac{1}{1+e^{-(2t+C)}} = \frac{1}{1+e^{-2t} e^{-C}} = \frac{1}{1+e^{-2t} \big(\frac{R_0}{1-R_0}\big)^{-1}}
+= \frac{1}{1+e^{-2t} \beta}$
 я звісно не експерт, але порівняно із розв'язком Кравцова у мене щось пішло не по плану ; розв'язок Кравцова:$ \frac{1}{1+e^{-t\beta}}$
