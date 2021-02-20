@@ -1,0 +1,54 @@
+\subsection{Завдання 4: (Знайти траєкторію)}
+
+$\left\{\begin{aligned}
+    \frac{dy}{dt} &= -2\gamma y - \omega_0^2x \\
+    \frac{dx}{dt} &= y
+\end{aligned}\right.$
+
+$\frac{dy}{dx} = -2\gamma - \omega^2_0 \frac{x}{y} \ \ \Bigg | \ y = xz, \ dy = zdx + xdz$
+
+$z + x\frac{dz}{dx} = -2\gamma - \frac{\omega_0^2}{z}$
+
+$-\frac{dx}{x} = \frac{dz}{z + 2\gamma + \frac{\omega_0^2}{z}} \ \ \Bigg | \cdot \frac{z}{z}$
+
+$-\frac{dx}{x} = \frac{zdz}{z^2 + 2\gamma z + \omega_0^2} = 
+\frac{zdz}{(z^2 + 2\gamma z + \gamma ^2) - (\gamma^2 - \omega_0^2)} \ \ \Bigg | \Delta =  \gamma^2 - \omega_0^2$
+
+$-\frac{dx}{x} = \frac{zdz}{(z + \gamma)^2 - \Delta} = 
+\frac{(z + \gamma - \gamma)d(z+\gamma)}{(z + \gamma)^2 - \Delta} = 
+\frac{(z + \gamma)d(z+\gamma)}{(z + \gamma)^2 - \Delta} - \gamma\frac{d(z+\gamma)}{(z + \gamma)^2 - \Delta}$
+
+$-\frac{dx}{x} = \frac{1}{2}\frac{d((z+\gamma)^2 - \Delta)}{(z + \gamma)^2 - \Delta} - \gamma\frac{d(z+\gamma)}{(z + \gamma)^2 - \Delta}$
+
+\begin{equation} \label{pr3:eq8}
+    -\ln x = \frac{1}{2} \ln {((z+\gamma)^2 - \Delta)} - \gamma \int \frac{d(z+\gamma)}{(z + \gamma)^2 - \Delta} + \ln C_0
+\end{equation}
+
+
+% $\Bigg [ \frac{d(z+\gamma)}{(z + \gamma)^2 - \Delta}  = \Big | p = z + \gamma, \ dp = d(z+\gamma) \ \Big | = 
+% \frac{dp}{p^2 - \Delta} = \frac{dp}{(p + \sqrt{\Delta})(p - \sqrt{\Delta})}  = 
+% \Big [ \frac{A}{p + \sqrt{\Delta}} + \frac{B}{p - \sqrt{\Delta}} = \frac{Ap - A\sqrt{\Delta} + Bp + B\sqrt{\Delta}}{(p + \sqrt{\Delta})(p - \sqrt{\Delta})}  =\\
+%  = \left\{\begin{aligned}
+%     B - A = 1\\
+%     B + A = 0
+% \end{aligned}\right. \Longrightarrow \ B = \frac{1}{2}, \ \ A = -\frac{1}{2} \Big ] = 
+% \frac{1}{2} \Big (\frac{dp}{p + \sqrt{\Delta}} - \frac{dp}{p - \sqrt{\Delta}}\Big) = \frac{1}{2}\Big(\frac{d(z-\gamma)}{(z-\gamma) + \sqrt{\Delta}} - \frac{d(z-\gamma)}{(z-\gamma) - \sqrt{\Delta}}\Big) \Bigg ]$
+
+
+% отже рівність (\ref{pr3:eq8}) приймає вигляд 
+
+% $\ln x^2 + \ln {((z+\gamma)^2 - \Delta)} = \gamma \ln\frac{(z+\gamma) + \sqrt{\Delta}}{(z+\gamma) - \sqrt{\Delta}} + C_1$
+
+Нехай $\Delta < 0$ тоді  (\ref{pr3:eq8}) матиме вигляд 
+
+$-\ln x = \frac{1}{2} \ln {((z+\gamma)^2 + \Delta)} - \gamma \int \frac{d(z+\gamma)}{(z + \gamma)^2 + \Delta} + \ln C_0$
+
+$-\ln x = \frac{1}{2} \ln {((z+\gamma)^2 + \Delta)} - \frac{\gamma}{\sqrt{\Delta}} \arctg \frac{z+\gamma}{\sqrt{\Delta}}+ \ln C$
+
+$\ln x^2((z+\gamma)^2 +\Delta) = \frac{2\gamma}{\sqrt{\Delta}} \arctg \frac{z+\gamma}{\sqrt{\Delta}} - \ln C^2$
+
+$\ln ( x^2z^2+x^2\gamma z + \gamma^2 - \gamma^2 + \omega_0^2) = \frac{2\gamma}{\omega} \arctg \frac{z+\gamma}{\omega} - \ln C^2$
+
+\begin{equation}
+    \ln ( y^2+\gamma xy + \omega_0^2 x^2) = \frac{2\gamma}{\omega} \arctg \frac{y+\gamma x}{\omega x} - \ln C^2
+\end{equation}
