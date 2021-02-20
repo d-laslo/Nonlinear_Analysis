@@ -1,0 +1,42 @@
+\section{Практика 3 (Аналіз системи)}
+
+$\ddot{x} + 2\gamma\dot{x} +\omega_0^2x = 0$
+
+Складемо систему
+
+\begin{minipage}{0.40\textwidth}
+    $\left\{\begin{aligned}
+        \frac{dy}{dt} &= -2\gamma y - \omega_0^2x \\
+        \frac{dx}{dt} &= y
+    \end{aligned}\right.$
+    \\[2mm]
+    $\overrightarrow{u} = \begin{bmatrix} y\\x \end{bmatrix} \ \ 
+    A = \begin{bmatrix}
+        -2\gamma & -\omega_0^2 \\
+        1 & 0
+    \end{bmatrix}$ 
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+    $\gamma \ge 0, \ \omega_0 \ge 0$\\[2mm]
+    $\overrightarrow{u}$ --- вектор стану\\
+    $\overrightarrow{b} $ --- власний вектор матриці $A$\\
+    $\lambda_i$ --- власні числа матриці $A$\\[1mm]
+\end{minipage}
+
+\begin{equation}\label{pr3:eq1}
+    \frac{d\overrightarrow{u}}{dt} = A\overrightarrow{u}
+\end{equation}
+
+
+Шукаємо розвязок (\ref{pr3:eq1}) у вигляді $\overrightarrow{u} = \overrightarrow{b}e^{\lambda t}$
+
+\input{practices/3_pr/task1.tex}
+
+\input{practices/3_pr/task2.tex}
+
+\input{practices/3_pr/task3.tex}
+
+\input{practices/3_pr/task4.tex}
+
+\input{practices/3_pr/task5.tex}
+
