@@ -1,0 +1,50 @@
+\subsection{Завдання 5:}
+
+$\left\{\begin{aligned}
+    \dot{x}_1 &= x_2 \\
+    \dot{x}_2 &= -\mu x_2 -\sin x_1
+\end{aligned}\right.$
+
+при малих коиваннях $x_1$ еквівалентна системі
+
+$\left\{\begin{aligned}
+    \dot{x}_1 &= x_2 \\
+    \dot{x}_2 &= -\mu x_2 -x_1
+\end{aligned}\right.$
+
+\textbf{Провести аналіз}
+
+$A = \begin{bmatrix}
+    0 & 1\\
+    -1 & -\mu
+\end{bmatrix} \Longrightarrow C = \mu, \ D = 1$
+
+\begin{itemize}
+    \item {
+    
+        $\mu = 0$
+        
+        $C = 0, D > 0 \Longrightarrow $  центр
+    }
+
+    \item {
+        $\mu \neq 0$
+
+        \begin{itemize}
+            \item[$\blacktriangledown$] {
+                $\mu \in (-2, 0) \cup (0, 2)$ 
+
+                $\frac{C^2}{4} < D,\ D > 0 \Longrightarrow $ фокус      
+            }
+
+            \item[$\blacktriangledown$] {
+                $\mu \in (-\infty, 2) \cup (2, +\infty)$ 
+
+                $\frac{C^2}{4} > D,\ D > 0 \Longrightarrow $ вузол        
+            }
+        \end{itemize}
+    }
+\end{itemize}
+
+
+Пара-па-па-пам, що за нах?

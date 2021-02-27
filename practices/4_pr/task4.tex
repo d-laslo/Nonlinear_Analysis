@@ -1,0 +1,63 @@
+\subsection{Завдання 4:}
+
+
+
+\begin{enumerate}[a)]
+    \item {
+        $\left\{\begin{aligned}
+            \dot{x}_1 &= x_2 \\
+            \dot{x}_2 &= -x_1-x_2
+        \end{aligned}\right., \ \ L = x_1^2 + x_2^2$
+
+        $\frac{dL}{dt} = \frac{\partial L}{\partial x_1}\dot{x}_1 + 
+        \frac{\partial L}{\partial x_2} \dot{x}_2 = 2x_1x_2 - 2x_2(x_1 + x_2) = -2x_2^2$
+
+        Стійкість присутня в усій області
+    }
+
+    \item {
+        $\ddot{x} + \dot{x}^3 + x = 0$
+
+        $\left\{\begin{aligned}
+            \dot{x}_1 &= x_2 \\
+            \dot{x}_2 &= -x_2^3  - x_1
+        \end{aligned}\right., \ \ L = x_1^2 + x_2^2$
+
+        $\frac{dL}{dt} = \frac{\partial L}{\partial x_1}\dot{x}_1 + 
+        \frac{\partial L}{\partial x_2} \dot{x}_2 = 2x_1x_2 - 2x_2(x_2^3 + x_1) = -2x_2^4$
+        Стійкість присутня в усій області
+    }
+
+    \item {
+        $\left\{\begin{aligned}
+            \dot{x}_1 &= x_2 \\
+            \dot{x}_2 &= -x_1 -(1-x_1^2)x_2
+        \end{aligned}\right.,  \ \ L = x_1^2 + x_2^2$
+
+        $\frac{dL}{dt} = \frac{\partial L}{\partial x_1}\dot{x}_1 + 
+        \frac{\partial L}{\partial x_2} \dot{x}_2 = 2x_1x_2 - 2x_2(x_1 + (1-x_1^2)x_2) = 
+        -2x_2^2(1-x_1^2)$
+
+        По ідеї стійкіть присутня в області яка обмежена площиною 
+        $\left\{\begin{aligned}
+            x_1 &< |1|\\
+            x_2 &\in \mathbb{R} 
+        \end{aligned}\right.$, але 
+        правильною є відповідь $x_1^2 + x_2^2 < 1$
+
+    }
+
+    \item {
+        $\left\{\begin{aligned}
+            \dot{x}_1 &= x_1(x_1 - a) \\
+            \dot{x}_2 &= x_2(x_2 - b)
+        \end{aligned}\right.,  \ \ L = \big(\frac{x_1}{a}\big)^2+ \big(\frac{x_2}{b}\big)^2$
+
+        $\frac{dL}{dt} = \frac{\partial L}{\partial x_1}\dot{x}_1 + 
+        \frac{\partial L}{\partial x_2} \dot{x}_2 = \frac{2}{a^2}x_1^2(x_1 - a) + \frac{2}{b^2}x_2^2(x_2 - b)$
+
+        \textcolor{red}{Потрібно доробить}
+
+        зрозуміть чому $x_1, x_2$ обмежені константами $a, b$ відповідно, і чому по цій причині виходить еліпс
+    }
+\end{enumerate}
