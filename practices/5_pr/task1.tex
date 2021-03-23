@@ -1,0 +1,69 @@
+\subsection{Завдання 1:}
+
+\textbf{Біфуркація Хопфа}
+
+\textbf{В полярні координати:} 
+
+$\left\{\begin{aligned}
+    \dot{x}_1 = -\Gamma x_1 - ax_2 - x_1r^2\\
+    \dot{x}_2 = -\Gamma x_2 + ax_1 - x_2r^2
+\end{aligned}\right.$
+
+$\left\{\begin{aligned}
+    x_1 = r\cos\varphi \\
+    x_2 = r\sin\varphi
+\end{aligned}\right.$
+
+$\left\{\begin{aligned}
+    \dot{r}\cos\varphi - r\dot{\varphi}\sin\varphi &= -\Gamma r\cos\varphi - ar\sin\varphi - r^3\cos\varphi \ \ (*)\\
+    \dot{r}\sin\varphi + r\dot{\varphi}\cos\varphi &= -\Gamma r\sin\varphi + ar\cos\varphi - r^3\sin\varphi \ \ (**)
+\end{aligned}\right.$
+
+$\dot{r}:\ \ (*)\cos\varphi + (**)\sin\varphi \Longrightarrow \dot{r} = -\Gamma r - r^3$
+
+$\dot{\varphi}:\ \ \frac{(*)(-\sin\varphi) + (**)\cos\varphi}{r} \Longrightarrow \dot{\varphi} = a$
+
+
+\begin{equation} \label{pr5:tsk1_1}
+    \left\{\begin{aligned}
+        \dot{r} &= -r(\Gamma + r^2)\\
+        \dot{\varphi} &= a
+    \end{aligned}\right.
+\end{equation}
+
+\textbf{Розв'язати систему (\ref{pr5:tsk1_1})}
+
+$-\frac{dr}{r(\Gamma + r^2)} = dt$
+
+заміна: $r^2 = z, \ dr = \frac{1}{2}z^{-\frac{1}{2}} dz $
+
+$-\frac{1}{2}\frac{dx}{z(\Gamma + z)} = dt$
+
+$\Bigg | \frac{A}{z} + \frac{B}{\Gamma + z} \Longrightarrow 
+\left\{\begin{aligned}
+    &A\Gamma = 1\\
+    &A+B = 0 
+\end{aligned}\right. \Longrightarrow 
+\left\{\begin{aligned}
+    &A = \frac{1}{\Gamma} \\
+    &B = -\frac{1}{\Gamma} \\
+\end{aligned}\right|$
+
+$-\frac{dz}{\Gamma(\Gamma + z)} + \frac{dz}{\Gamma z} = -2dt$
+
+$-2t = \frac{1}{\Gamma}(-\ln(z+\Gamma) + \ln(z_0+\Gamma) + \ln z - \ln z_0)$
+
+$-2\Gamma t = \ln(\frac{(z_0 + \Gamma)z}{(z+\Gamma)z_0})$
+
+$e^{-2\Gamma t} = \frac{z_0 + \Gamma}{z_0} \frac{z}{z+\Gamma}$
+
+$\frac{z_0}{z_0+\Gamma} e^{-2\Gamma t} = \frac{z}{z+\Gamma}$
+
+$z = \frac{\Gamma(\frac{z_0}{z_0+\Gamma})e^{-2\Gamma t}}{1-\frac{z_0}{z_0+\Gamma}e^{-2\Gamma t}} = 
+\frac{\Gamma}{\frac{z_0+\Gamma}{z_0}e^{2\Gamma t} - 1}$
+
+$z = \frac{\Gamma z_0}{(z_0+\Gamma)e^{2\Gamma t} - z_0}$
+
+$r = \sqrt{\frac{\Gamma r^2_0}{(r^2_0+\Gamma)e^{2\Gamma t} - r^2_0}}$
+
+при $ \Gamma < 0$ і $t \rightarrow \infty \Longrightarrow r(t)\rightarrow \sqrt{|\Gamma|}$ 
