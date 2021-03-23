@@ -38,20 +38,30 @@ $\left\{\begin{aligned}
 \end{aligned}\right.$
 
 $\left\{\begin{aligned}
-    \dot{r}\sin \varphi + \dot{\varphi}r \cos \varphi &=  -2\gamma r\sin \varphi - \omega_0^2 r\cos \varphi\\
-    \dot{r}\cos \varphi - \dot{\varphi} r \sin \varphi &= r \sin \varphi
+    \dot{r}\sin \varphi + \dot{\varphi}r \cos \varphi &=  -2\gamma r\sin \varphi - \omega_0^2 r\cos \varphi \ \ (*)\\
+    \dot{r}\cos \varphi - \dot{\varphi} r \sin \varphi &= r \sin \varphi \ \ (**)
 \end{aligned}\right.$
+
+$\dot{r}:\ \ (*) \sin\varphi + (**)\cos\varphi \Longrightarrow \dot{r} = -2\gamma r\sin^2 \varphi - \omega_0^2 r\cos \varphi\sin\varphi + r\sin\varphi\cos\varphi =\\
+= (1-\omega^2_0)r\cos\varphi\sin\varphi - 2\gamma r\sin^2\varphi $
+
+$\dot{\varphi}:\ \ (*) \cos\varphi + (**)(-\sin\varphi) \Longrightarrow \dot{\varphi}r = -2\gamma r\sin \varphi\cos\varphi -\omega_0^2 r\cos^2\varphi - r\sin^2\varphi$
 
 $\left\{\begin{aligned}
-    -\dot{r} &= \dot{\varphi}r\ctg \varphi + 2\gamma r + \omega_0^2 r \ctg \varphi \\
-    \dot{\varphi} &= \frac{\dot{r}\ctg \varphi }{r} - 1
+    \dot{r} &= (1-\omega^2_0)r\cos\varphi\sin\varphi - 2\gamma r\sin^2\varphi\\
+    \dot{\varphi} &= -2\gamma \sin \varphi\cos\varphi -\omega_0^2 \cos^2\varphi - \sin^2\varphi
 \end{aligned}\right.$
 
-$-\dot{\varphi} = \dot{\varphi} \ctg^2 \varphi + 2\gamma\ctg \varphi + \omega_0^2 \ctg^2 \varphi + 1$
+% $\left\{\begin{aligned}
+%     -\dot{r} &= \dot{\varphi}r\ctg \varphi + 2\gamma r + \omega_0^2 r \ctg \varphi \\
+%     \dot{\varphi} &= \frac{\dot{r}\ctg \varphi }{r} - 1
+% \end{aligned}\right.$
 
-$-\dot{\varphi}(1 + \ctg^2\varphi) =  2\gamma\ctg \varphi + \omega_0^2 \ctg^2\varphi + 1\ | \ 1+\ctg^2\varphi = \frac{1}{\sin^2\varphi}$ 
+% $-\dot{\varphi} = \dot{\varphi} \ctg^2 \varphi + 2\gamma\ctg \varphi + \omega_0^2 \ctg^2 \varphi + 1$
 
-$\dot{\varphi} = -2\gamma\cos\varphi\sin\varphi - \omega^2_0\cos^2\varphi - \sin^2\varphi= 
--\gamma\sin 2\varphi - \omega_0^2\cos^2\varphi - \sin^2\varphi \ldots$ 
+% $-\dot{\varphi}(1 + \ctg^2\varphi) =  2\gamma\ctg \varphi + \omega_0^2 \ctg^2\varphi + 1\ | \ 1+\ctg^2\varphi = \frac{1}{\sin^2\varphi}$ 
 
-\textcolor{red}{Потрібно доробити}
+% $\dot{\varphi} = -2\gamma\cos\varphi\sin\varphi - \omega^2_0\cos^2\varphi - \sin^2\varphi= 
+% -\gamma\sin 2\varphi - \omega_0^2\cos^2\varphi - \sin^2\varphi \ldots$ 
+
+% \textcolor{red}{Потрібно доробити}
