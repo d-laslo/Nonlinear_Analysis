@@ -1,0 +1,36 @@
+\subsection{Завдання 2:}
+
+$\left\{\begin{aligned}
+    &\frac{dv}{dt} = a = const\\
+    &\frac{dx}{dt} = v
+\end{aligned}\right.$
+
+$\begin{aligned}
+    v(0) = v_0\\
+    x(0) = x_0
+\end{aligned}$
+
+\textbf{Точний розвязок системи}
+
+$\left\{\begin{aligned}
+    &v = v_0 + at\\
+    &x = x_0 + v_0t + \frac{at^2}{2}
+\end{aligned}\right.$
+
+замінюємо $t \ to n\tau, \ \ n \in \mathbf{N}$
+
+$\left\{\begin{aligned}
+    &v_n = v_0 + an\tau\\
+    &x_n = x_0 + v_0n\tau + \frac{an^2\tau^2}{2}
+\end{aligned}\right.$
+
+$v_{n+1} = \underbrace{v_0 + an\tau}_{v_n} + a\tau$
+
+$x_{n+1} = x_0 + v_0n\tau + v_0\tau + \frac{a(n+1)^2\tau^2}{2} = 
+\underbrace{x_0 + v_0n\tau + \frac{an^2\tau^2}{2}}_{x_n} + v_0\tau + an\tau^2 + \frac{a\tau^2}{2} = \\
+\Bigg | an\tau^2 = v_n\tau - v_0\tau \Bigg | = x_n + v_n\tau + \frac{a\tau^2}{2}$
+
+$\left\{\begin{aligned}
+    &v_{n+1} = v_n + a\tau\\
+    &x_{n+1} = x_n + v_n\tau + \frac{a\tau^2}{2}
+\end{aligned}\right.$
