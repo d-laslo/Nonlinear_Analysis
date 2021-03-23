@@ -1,13 +1,15 @@
 \subsection{Завдання 1:}
 
 \textbf{Біфуркація Хопфа}
-
-\textbf{В полярні координати:} 
+\label{pr5:1}
 
 $\left\{\begin{aligned}
     \dot{x}_1 = -\Gamma x_1 - ax_2 - x_1r^2\\
     \dot{x}_2 = -\Gamma x_2 + ax_1 - x_2r^2
 \end{aligned}\right.$
+
+\textbf{В полярні координати:} 
+
 
 $\left\{\begin{aligned}
     x_1 = r\cos\varphi \\
@@ -66,4 +68,47 @@ $z = \frac{\Gamma z_0}{(z_0+\Gamma)e^{2\Gamma t} - z_0}$
 
 $r = \sqrt{\frac{\Gamma r^2_0}{(r^2_0+\Gamma)e^{2\Gamma t} - r^2_0}}$
 
-при $ \Gamma < 0$ і $t \rightarrow \infty \Longrightarrow r(t)\rightarrow \sqrt{|\Gamma|}$ 
+при $ \Gamma < 0$ і $t \rightarrow \infty \Longrightarrow r(t)\rightarrow \sqrt{|\Gamma|}
+\Longrightarrow$ тобто існує граничнй цикл: коло із радіусом $\sqrt{|\Gamma|}$ 
+
+цикл є стійким, оскільки при $r_0 > \sqrt{|\Gamma|}$, і при $r_0 < \sqrt{|\Gamma|}$
+$r(t) \underset{t \to \infty}{\longrightarrow} \sqrt{|\Gamma|}$
+
+\textbf{Інший спосіб виявити граничний цикл(не розв'язуючи систему Д.Р.)}
+
+$\left\{\begin{aligned}
+    &\dot{r} = -r(\Gamma + r^2)\\
+    &\dot{\varphi} = a
+\end{aligned}\right.$
+
+При $\Gamma < 0$ і \\[-15mm]
+\begin{itemize}
+    \item {
+        $r \to 0,$ можна відкинути член $-r^3$, оскільки $r\Gamma$ домінує, тоді 
+        $\dot{r} = -r\Gamma > 0$ отже $r$ зростає
+    }
+    \item {
+        при $r \to \infty$ відкидаємо $-r\Gamma$ оскільки $-r^3$ домінує, в такому разі
+        $\dot{r}=-r^3 < 0$, $r$ спадає
+    }
+\end{itemize} 
+
+Отже можна зробити висновок, що існує певне значення $R$ до якого прямє $r$.
+
+\textbf{Дослідити цикл на стійкість}
+
+Нехай $r \to R + \delta r$,  підставимо даний вираз у вихідне Д.Р, при $\Gamma < 0$.
+
+$\frac{d}{dt}(R+\delta r) = -(R+\delta r)\Gamma - (R+\delta r)^3$
+
+$\frac{d}{dt}\delta r = -R\Gamma -\Gamma\delta r - R^3 - 3R^2 \delta r - 
+3R\delta r^2 - \delta r^3$
+
+відкинемо члени в яких порядки більше 1, $R = \sqrt{|\Gamma|}$
+
+$\frac{d}{dt}\delta r =$ \textcolor{red}{$-R\Gamma$} \textcolor{blue}{$-\Gamma\delta r$} 
+\textcolor{red}{$-R^3$} \textcolor{blue}{$-3R^2\delta r$} 
+
+$\frac{d}{dt}\delta r = -2|\Gamma|\delta r$
+
+знак $\frac{d}{dt}\delta r$ протилежний до знака $\delta r$, отже цикл є стійким
