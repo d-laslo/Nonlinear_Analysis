@@ -1,0 +1,46 @@
+\subsection{Завдання 3:}
+
+\textbf{Біфуркація Хопфа, модель--відображення при $a=1,\ \ \Gamma = -1$}
+
+Загальний розвязок див (\ref{pr5:1})
+
+$r^2 = \frac{1}{\frac{r^2_0+\Gamma}{r_0^2\Gamma}e^{2\Gamma (t- t_0)} - \frac{1}{\Gamma}}$
+
+$\varphi = a(t-t_0)$
+
+при $a=1,\ \ \Gamma = -1$ маємо:
+
+$r^2 = \frac{1}{1+Ce^{-2(t-t_0)}}$
+
+$\varphi = t - t_0, \ \ C = \frac{1-r_0^2}{r_0^2}$
+
+\textbf{Знайти точки і моменти часу в які ф.тр. перетинає вісь OX }
+
+$x = r\cos(t - t_0)$
+
+$y = r\sin(t-t_0)$
+
+із умови перетину осі OX :
+
+$y = 0 \Longrightarrow sin(t - t_0) = 0, t = t_0 + \pi n, \ \ n\in\mathbf{N}$
+
+підставляємо $t =  t_0 + \pi n$ в $x = r\cos(t - t_0)$
+
+$x_n = \frac{\cos\pi n}{\sqrt{1+Ce^{-2\pi n}}} = \frac{(-1)^n}{\sqrt{1+Cq^n}}$
+
+\textbf{Знайдіть відображення $f()$, таке що $x_{n+1} = f(x_n)$}
+
+позначимо $q = e^{-2\pi}$
+
+$x_{n+1} = \frac{(-1)^{n+1}}{\sqrt{1+Cq^{n+1}}} = \frac{(-1)^{n+1}}{\sqrt{1+Cq^{n}}}\sqrt{\frac{1+Cq^n}{1+Cq^{n+1}}}$
+
+з $x_n$ виразимо $Cq^n$ і підставимо у $x_{n+1}$
+
+$x_n^2 = \frac{1}{1+Cq^n} \Longrightarrow Cq^n = \frac{1}{x_n^2} - 1$
+
+$x_{n+1} = -x_n\sqrt{\frac{\frac{1}{x_n^2}}{1+q(\frac{1}{x_n^2} - 1)}}$
+
+$x_{n+1} = -\frac{x_n}{|x_n|} \frac{1}{\sqrt{1+q(\frac{1}{x_n^2} - 1)}} = 
+\frac{-\sign(x_n)}{\sqrt{1+q(\frac{1}{x_n^2} - 1)}}$
+
+$x_{n+1} = \frac{-x_n}{\sqrt{x_n^2 + q(1-x)n^2}}$
